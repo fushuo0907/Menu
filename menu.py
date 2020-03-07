@@ -6,7 +6,7 @@ import cv2
 if __name__ == '__main__':
     image_path = "./images"
     image_type = os.listdir(image_path)
-    menu_file = open("./menu.md", "w+")#, encoding='utf-8')
+    menu_file = open("./ReadMe.md", "w+")#, encoding='utf-8')
     for i in image_type:
         # print("# {}".format(i))
         menu_file.write("# {}\n".format(i))
