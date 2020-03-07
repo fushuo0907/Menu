@@ -18,8 +18,9 @@ if __name__ == '__main__':
             cv2.imwrite(os.path.abspath(image_name), image)
             food_name = os.path.splitext(os.path.basename(image_name))[0]
             print(food_name)
+            new_image_path = "https://github.com/fushuo0907/Menu/blob/master/{}/{}.jpeg".format(i, food_name)
             menu_file.write("#### {}\n".format(food_name))
-            menu_file.write("![{}]({})\n".format(food_name, image_name))
+            menu_file.write("![{}]({})\n".format(food_name, new_image_path))
 
 
 
